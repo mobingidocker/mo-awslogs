@@ -1,5 +1,7 @@
 FROM amazonlinux:2017.03
 
+LABEL maintainer="mobingi,Inc."
+
 RUN yum update -y && yum install -y \
 		awslogs \
 		cronie \
