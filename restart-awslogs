@@ -1,1 +1,1 @@
-05 * * * * root /restart-awslogs.sh
+*/30 * * * * root /restart-awslogs.sh
