@@ -7,4 +7,4 @@ sed -i \
   -e "s/MO_INSTANCE_ID/$INSTANCE_ID/g" \
   /etc/awslogs/awslogs.conf
 
-exec /usr/local/bin/supervisord
+exec /usr/local/bin/supervisord -c /etc/supervisord.conf
