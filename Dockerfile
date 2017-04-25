@@ -8,6 +8,7 @@ RUN yum update -y && yum install -y \
 	&& easy_install supervisor
 
 COPY awslogs.conf /etc/awslogs/awslogs.conf
+COPY logging.conf /etc/awslogs/logging.conf
 COPY supervisord.conf /etc/supervisord.conf
 
 COPY restart-awslogs /etc/cron.d/restart-awslogs
