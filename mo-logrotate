@@ -1,0 +1,22 @@
+/var/log/modaemon
+/var/log/awslogs.log
+/var/containerlogs/log/startup.log
+/var/containerlogs/log/bundler
+/var/containerlogs/log/supervisor/supervisord.log
+/var/containerlogs/log/apache2/access.log
+/var/containerlogs/log/apache2/error.log
+/var/containerlogs/log/nginx/access.log
+/var/containerlogs/log/nginx/error.log
+/var/containerlogs/log/rails/production.log
+/var/containerlogs/log/server.log
+/var/containerlogs/log/server_error.log
+/var/containerlogs/log/application.log
+/var/containerlogs/log/application_error.log
+{
+    missingok
+    notifempty
+    daily
+    rotate 3
+    compress
+    copytruncate
+}
