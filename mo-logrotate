@@ -17,6 +17,5 @@
     notifempty
     daily
     rotate 3
-    compress
     copytruncate
 }
